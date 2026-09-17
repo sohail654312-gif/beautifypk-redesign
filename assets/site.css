@@ -1,0 +1,28 @@
+
+:root{--navy:#07162b;--navy2:#0b2444;--blue:#0b63ce;--royal:#1649bf;--sky:#43b5ff;--ice:#edf7ff;--line:rgba(255,255,255,.12)}
+html{scroll-behavior:smooth}body{background:#07162b;color:#eef6ff}
+.bg-mesh{background:
+radial-gradient(circle at 8% 12%,rgba(67,181,255,.20),transparent 28%),
+radial-gradient(circle at 88% 20%,rgba(37,99,235,.20),transparent 30%),
+radial-gradient(circle at 45% 78%,rgba(14,165,233,.10),transparent 32%),
+linear-gradient(145deg,#061326,#081a32 44%,#07162b)}
+.gridfx{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:42px 42px}
+.glass{background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.055));border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.glass-dark{background:rgba(4,18,36,.80);border:1px solid rgba(255,255,255,.10);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.card3d{transform-style:preserve-3d;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.card3d:hover{transform:translateY(-8px) rotateX(2.2deg) rotateY(-2.2deg);border-color:rgba(67,181,255,.5);box-shadow:0 28px 70px rgba(0,0,0,.34),0 0 55px rgba(67,181,255,.10)}
+.brand-shadow{box-shadow:0 18px 60px rgba(9,99,206,.18)}
+.soft-shadow{box-shadow:0 28px 80px rgba(0,0,0,.28)}
+.text-gradient{background:linear-gradient(90deg,#fff,#bfe5ff 42%,#58b9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn-primary{background:linear-gradient(90deg,#4ec4ff,#2f82ff);color:#061326;box-shadow:0 15px 42px rgba(59,130,246,.28)}
+.btn-primary:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.btn-ghost{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.show{opacity:1;transform:none}
+.hero-glow:before{content:"";position:absolute;inset:-14%;background:radial-gradient(circle,rgba(59,130,246,.25),transparent 58%);filter:blur(28px);z-index:-1}
+.med-line{height:1px;background:linear-gradient(90deg,transparent,#4ec4ff,transparent)}
+.cat-btn.active{background:#eaf6ff;color:#07162b;border-color:#eaf6ff}
+.procedure-card[hidden]{display:none!important}
+.faq-item details summary::-webkit-details-marker{display:none}
+.faq-item details[open] .plus{transform:rotate(45deg)}
+.image-frame img{transition:transform .7s ease}.image-frame:hover img{transform:scale(1.035)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}

@@ -1,0 +1,1 @@
+window.BEAUTIFYPK_MEDIA={logo:'data:image/webp;base64,'+window._logo,portrait:'data:image/webp;base64,'+window._portrait};document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-media=logo]').forEach(e=>e.src=window.BEAUTIFYPK_MEDIA.logo);document.querySelectorAll('[data-media=portrait]').forEach(e=>e.src=window.BEAUTIFYPK_MEDIA.portrait);});
